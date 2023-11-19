@@ -1,0 +1,8 @@
+<!-- Template untuk email aktivasi dengan EJS -->
+<h1>Hai <%= user.name %></h1>
+<p>Kami siap mengaktifkan email Anda, klik tombol aktivasi di bawah ini</p>
+<form action="/api/v1/auth/email-activation?token=<%=token%>" method="post">
+  <div>
+    <input type="submit" value="Aktivasi" />
+  </div>
+</form>
